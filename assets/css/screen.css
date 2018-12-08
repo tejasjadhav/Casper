@@ -108,17 +108,12 @@ body {
 /* ---------------------------------------------------------- */
 
 .site-header {
-    position: relative;
+    position: absolute;
     padding-top: 12px;
     padding-bottom: 12px;
     color: #000;
-    background-color: color(var(--darkgrey) l(-5%)) no-repeat center center;
-    background-size: cover;
-}
-
-.site-header.no-cover:before,
-.site-header.no-cover:after {
-    display: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100vw;
 }
 
 .site-header-content {
@@ -620,7 +615,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .post-full-header {
     margin: 0 auto;
     padding: 6vw 3vw 3vw;
-    max-width: 1040px;
     text-align: center;
 }
 @media (max-width: 500px) {
@@ -654,8 +648,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .post-full-image {
-    margin: 0 -10vw -165px;
-    height: 800px;
+    margin: 0 -10vw;
+    height: 100vh;
     background: var(--lightgrey) center center;
     background-size: cover;
     border-radius: 5px;
@@ -663,16 +657,25 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 @media (max-width: 1170px) {
     .post-full-image {
-        margin: 0 -4vw -100px;
-        height: 600px;
+        margin: 0 -4vw;
         border-radius: 0;
     }
 }
 
-@media (max-width: 800px) {
-    .post-full-image {
-        height: 400px;
-    }
+.post-full-image .post-full-header {
+    display: flex;
+    height: 100vh;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    flex-direction: column;
+    justify-content: center;
+}
+
+.post-full-image .post-full-meta,
+.post-full-image .post-full-title,
+.post-full-image .post-full-meta-date,
+.post-full-image a {
+    color: #fff;
 }
 
 .post-full-content {
