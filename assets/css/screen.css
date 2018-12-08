@@ -113,6 +113,8 @@ body {
     padding-bottom: 12px;
     color: #fff;
     background-color: #000;
+    background-position: center;
+    background-size: cover;
 }
 
 .site-header.featured-image {
