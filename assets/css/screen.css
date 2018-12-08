@@ -108,12 +108,17 @@ body {
 /* ---------------------------------------------------------- */
 
 .site-header {
-    position: absolute;
+    position: relative;
     padding-top: 12px;
     padding-bottom: 12px;
-    color: #000;
-    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    background-color: #000;
+}
+
+.site-header.featured-image {
+    position: absolute;
     width: 100vw;
+    background-color: transparent;
 }
 
 .site-header-content {
@@ -650,7 +655,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .post-full-image {
     margin: 0 -10vw;
     height: 100vh;
-    background: var(--lightgrey) center center;
+    background: #fff center center;
     background-size: cover;
     border-radius: 5px;
 }
@@ -698,34 +703,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     .post-full-content {
         font-size: 1.9rem;
     }
-}
-
-.post-full-content:before {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: -5px;
-    z-index: -1;
-    display: block;
-    width: 20px;
-    height: 200px;
-    background: rgba(39,44,49,0.15);
-    filter: blur(5px);
-    transform: rotate(-5deg);
-}
-
-.post-full-content:after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    right: -5px;
-    z-index: -1;
-    display: block;
-    width: 20px;
-    height: 200px;
-    background: rgba(39,44,49,0.15);
-    filter: blur(5px);
-    transform: rotate(5deg);
 }
 
 .no-image .post-full-content {
@@ -1034,7 +1011,6 @@ Usage (In Ghost editor):
     }
     .post-full-image {
         margin-bottom: 4vw;
-        height: 350px;
     }
     .post-full-content {
         padding: 0;
