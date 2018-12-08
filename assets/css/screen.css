@@ -394,7 +394,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .post-card-content-link {
     position: relative;
     flex-grow: 1;
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding: 25px 25px 0;
     color: var(--darkgrey);
 }
@@ -572,6 +573,16 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .home-template .site-header:after {
     display: none;
+}
+
+/* Text only cards should have bigger text */
+.no-image .post-card-title {
+    font-size: 3.5rem;
+}
+
+.no-image .post-card-excerpt {
+    font-size: 2.5rem;
+    line-height: 3.55rem;
 }
 
 
