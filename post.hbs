@@ -3,6 +3,9 @@
 {{!-- The tag above means: insert everything in this file
 into the {body} of the default.hbs template --}}
 
+{{!-- Everything inside the #post tags pulls data from the post --}}
+{{#post}}
+
 {{#if feature_image}}
 <header class="site-header outer featured-image">
 {{else}}
@@ -12,9 +15,6 @@ into the {body} of the default.hbs template --}}
         {{> "site-nav"}}
     </div>
 </header>
-
-{{!-- Everything inside the #post tags pulls data from the post --}}
-{{#post}}
 
 <main id="site-main" class="site-main outer">
 
