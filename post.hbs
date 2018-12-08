@@ -4,9 +4,9 @@
 into the {body} of the default.hbs template --}}
 
 {{#if feature_image}}
-<header class="site-header outer">
-{{else}}
 <header class="site-header outer featured-image">
+{{else}}
+<header class="site-header outer">
 {{/if}}
     <div class="inner">
         {{> "site-nav"}}
