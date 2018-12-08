@@ -576,6 +576,10 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 /* Text only cards should have bigger text */
+.no-image .post-card-content-link {
+    justify-content: center;
+}
+
 .no-image .post-card-title {
     font-size: 3.5rem;
 }
