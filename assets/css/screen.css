@@ -1853,6 +1853,26 @@ Usage (In Ghost editor):
     margin: -2.25em 0 3em;
 }
 
+.kg-embed-card iframe {
+    width: 60vw;
+    height: 33.75vw; /* Maintain the 1.777 ratio between width and height */
+}
+
+@media (max-width: 768px) {
+    .kg-embed-card iframe {
+        width: 78vw;
+        height: 43.875vw; /* Maintain the 1.777 ratio between width and height */
+    }
+}
+
+@media (max-width: 500px) {
+    .kg-embed-card iframe {
+        width: 92vw;
+        height: 51.75vw; /* Maintain the 1.777 ratio between width and height */
+    }
+}
+
+
 /* 8. Author Template
 /* ---------------------------------------------------------- */
 
