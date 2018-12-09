@@ -861,7 +861,7 @@ Usage (In Ghost editor):
 }
 
 .post-full-content pre code {
-    padding: 0;
+    padding: 0 0 0 0.7rem;
     font-size: inherit;
     line-height: inherit;
     background: transparent;
@@ -2194,4 +2194,15 @@ Usage (In Ghost editor):
     .site-footer-nav a:first-child {
         margin-left: 0;
     }
+}
+
+/* External plugins */
+
+/* Gist */
+.gist {
+    width: 100%;
+}
+
+.gist .blob-code-inner {
+    font-size: 1.6rem;
 }
