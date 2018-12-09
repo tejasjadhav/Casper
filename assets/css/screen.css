@@ -2204,5 +2204,5 @@ Usage (In Ghost editor):
 }
 
 .gist .blob-code-inner {
-    font-size: 1.6rem;
+    font-size: 1.6rem !important;
 }
