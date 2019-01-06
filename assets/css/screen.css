@@ -839,7 +839,6 @@ Usage (In Ghost editor):
     color: inherit;
     font-size: inherit;
     line-height: inherit;
-    font-style: italic;
 }
 
 .post-full-content blockquote p:last-child {
