@@ -1675,7 +1675,7 @@ Usage (In Ghost editor):
 
 .kg-code-card {
     width: 100%;
-    margin: 0;
+    margin: 0 !important;
 }
 
 .kg-code-card figcaption {
