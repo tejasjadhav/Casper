@@ -1673,6 +1673,14 @@ Usage (In Ghost editor):
     }
 }
 
+.kg-code-card {
+    width: 100%;
+    margin: 0;
+}
+
+.kg-code-card figcaption {
+    margin: 0;
+}
 
 /* 8. Author Template
 /* ---------------------------------------------------------- */
@@ -2006,4 +2014,9 @@ Usage (In Ghost editor):
 
 .gist .blob-code-inner {
     font-size: 1.6rem !important;
+}
+
+/* Prism */
+:not(pre) > code[class*="language-"], pre[class*="language-"] {
+    margin-bottom: 0.5em !important;
 }
